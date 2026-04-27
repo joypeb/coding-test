@@ -2,6 +2,8 @@ package Phase0;
 
 import java.util.ArrayDeque;
 import java.util.Deque;
+import java.util.LinkedList;
+import java.util.Queue;
 import java.util.Stack;
 
 public class StackQueue {
@@ -32,6 +34,15 @@ public class StackQueue {
 			}
 		}
 
-		Deque<Integer> stack3 = new ArrayDeque<>();
+		Deque<Integer> deque = new ArrayDeque<>();
+
+		Queue<Integer> queue = new LinkedList<>();
+
+		queue.offer(1);
+		queue.offer(2);
+
+		System.out.println(queue.poll());
+
+
 	}
 }
